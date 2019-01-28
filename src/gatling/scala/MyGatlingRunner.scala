@@ -1,12 +1,12 @@
 import io.gatling.app.Gatling
 import io.gatling.core.config.GatlingPropertiesBuilder
-import simulation.AddPauseTime
+import simulation._
 
 object MyGatlingRunner {
 
   def main(args: Array[String]): Unit = {
 
-    val simClass = classOf[AddPauseTime].getName
+    val simClass = classOf[CodeReuseWithObjects].getName
 
     val props = new GatlingPropertiesBuilder
     props.simulationClass(simClass)
